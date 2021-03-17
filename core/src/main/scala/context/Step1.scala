@@ -7,6 +7,8 @@ object Step1 extends App:
   val ff: Function1[Int, String] = f
   val gg: ContextFunction1[Int, String] = g
 
+  List[Int ?=> String](g, g)
+  
   println(f(10))
 
   println(g(using 16))
